@@ -2,7 +2,7 @@
 
 Let's explore further containerising and deploying further applications in Kubernetes.
 
-## Scenario
+## Scenario
 
 In this scenario, imagine you are a cloud engineer supporting two teams
 

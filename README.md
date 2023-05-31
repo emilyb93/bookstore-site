@@ -43,7 +43,7 @@ docker build --platform linux/amd64 -t bookstore-frontend:1.0 .
 Once built, you can start the backend using
 
 ```
-docker run --platform linux/amd64 --rm -it -p 5050:5000 bookstore-api:1.0
+docker run --platform linux/amd64 --rm -it -p 5050:5000 bookstore-backend-api:1.0
 ```
 
 Assuming you've mapped port 5050 you could hit the backend API to see a list of books.
@@ -59,7 +59,6 @@ docker run --platform linux/amd64 --rm -it -p 8080:80 bookstore-frontend:1.0
 **!!!BUT WAIT!!!** The frontend doesn't seem to be showing a list of books, when the team demo'd it earlier they shown you that it should like this image below:
 
 ![Screenshot of the books app showing books and their covers](./docs/images/app-screenshot.png "Screenshot of the books app showing books and their covers")
-
 
 It's your job to inspect the frontend and work out why it isn't successfully hitting the backend API.
 
@@ -84,6 +83,3 @@ Don't forget you will have to PUSH your container images up to Docker Hub in ord
 2. Work through the instructions
 
 3. Share the link to your GitHub repository
-
-
-

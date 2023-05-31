@@ -43,7 +43,7 @@ docker build --platform linux/amd64 -t bookstore-frontend:1.0 .
 Once built, you can start the backend using
 
 ```
-docker run --platform linux/amd64 --rm -it -p 5050:5000 bookstore-backend-api:1.0
+docker run --platform linux/amd64 --rm -it -d -p 5050:5000 bookstore-backend-api:1.0
 ```
 
 Assuming you've mapped port 5050 you could hit the backend API to see a list of books.
@@ -53,7 +53,7 @@ Assuming you've mapped port 5050 you could hit the backend API to see a list of 
 The frontend can also be started using Docker - it will communicate to the backend to get a list of books.
 
 ```
-docker run --platform linux/amd64 --rm -it -p 8080:80 bookstore-frontend:1.0
+docker run --platform linux/amd64 --rm -it -d -p 8080:80 bookstore-frontend:1.0
 ```
 
 **!!!BUT WAIT!!!** The frontend doesn't seem to be showing a list of books, when the team demo'd it earlier they shown you that it should like this image below:

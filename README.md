@@ -90,6 +90,10 @@ Don't forget you will have to PUSH your container images up to Docker Hub in ord
 
 **💡 HINT:** Your frontend should be configured to talk to the backend via the backend service. You shouldn't have to do any port mapping.
 
+[DNS for Services and Pods](https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/)
+
+[Internal DNS Service in Kubernetes Environments](https://rancher.com/docs/rancher/v1.2/en/kubernetes/k8s-internal-dns-service/)
+
 ## Submission instructions
 
 1. Fork this GitHub repository

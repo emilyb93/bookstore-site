@@ -60,7 +60,7 @@ docker run --platform linux/amd64 --rm -it -d -p 8080:80 bookstore-frontend:1.0
 
 ![Screenshot of the books app showing books and their covers](./docs/images/app-screenshot.png "Screenshot of the books app showing books and their covers")
 
-It's your job to inspect the frontend and work out why it isn't successfully hitting the backend API.
+It's your job to inspect the **frontend codebase** and work out why it isn't successfully hitting the backend API.
 
 You'll need to fix the issue and build a new docker image
 
@@ -89,6 +89,10 @@ Your job is to fill out the four files and get your applications working in Kube
 Don't forget you will have to PUSH your container images up to Docker Hub in order for Kubernetes to know where to pull the images from.
 
 **💡 HINT:** Your frontend should be configured to talk to the backend via the backend service. You shouldn't have to do any port mapping.
+
+[DNS for Services and Pods](https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/)
+
+[Internal DNS Service in Kubernetes Environments](https://rancher.com/docs/rancher/v1.2/en/kubernetes/k8s-internal-dns-service/)
 
 ## Submission instructions
 

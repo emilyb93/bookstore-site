@@ -90,7 +90,7 @@ Don't forget you will have to PUSH your container images up to Docker Hub in ord
 
 **💡 HINT:** Your frontend should be configured to talk to the backend via the backend service. You shouldn't have to do any port mapping. Also don't forget it is the browser that is making the request to the backend API service NOT the frontend container within the cluster. 
 
-So to achieve this, as a temporary measure have a read over Kubernetes port forwarding of a service
+So to achieve this, as a temporary measure, to get things working, have a read over Kubernetes port forwarding of a service
 
 [Kubernetes port forwarding](https://kubernetes.io/docs/tasks/access-application-cluster/port-forward-access-application-cluster/)
 

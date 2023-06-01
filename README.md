@@ -88,11 +88,7 @@ Your job is to fill out the four files and get your applications working in Kube
 
 Don't forget you will have to PUSH your container images up to Docker Hub in order for Kubernetes to know where to pull the images from.
 
-**💡 HINT:** Your frontend should be configured to talk to the backend via the backend service. You shouldn't have to do any port mapping. Also don't forget it is the browser that is making the request to the backend API service NOT the frontend container within the cluster. 
-
-So to achieve this, as a temporary measure, to get things working, have a read over Kubernetes port forwarding of a service
-
-[Kubernetes port forwarding](https://kubernetes.io/docs/tasks/access-application-cluster/port-forward-access-application-cluster/)
+**💡 HINT:** Your frontend should be configured to talk to the backend via the backend service. Have a look at the .env file within the frontend and explore using the "LoadBalancer" type for your service.
 
 ## Submission instructions
 

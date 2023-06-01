@@ -64,6 +64,20 @@ It's your job to inspect the frontend and work out why it isn't successfully hit
 
 You'll need to fix the issue and build a new docker image
 
+### **Teardown**
+
+Before we move on, lets tear down any local versions we have of these images now.
+
+Use `docker ps` to list your currently running containers and find the ones you just started up.
+
+Use the NAME of the container on the far right of your terminal that corresponds with your front and back end containers to stop these containers from running.
+
+`docker stop name_of_your_container`
+
+_These names will be different for everyone._
+
+Once you have run this command, the terminal will output the name of the container it has stopped so you can be sure its worked, although for peace of mind run `docker ps` once more to double check!
+
 ### Get things running in Kubernetes
 
 Now you have proved things out and have them working locally in Docker it's time to take your containers and get them running in Kubernetes.

@@ -60,7 +60,7 @@ docker run --platform linux/amd64 --rm -it -d -p 8080:80 bookstore-frontend:1.0
 
 ![Screenshot of the books app showing books and their covers](./docs/images/app-screenshot.png "Screenshot of the books app showing books and their covers")
 
-It's your job to inspect the frontend and work out why it isn't successfully hitting the backend API.
+It's your job to inspect the **frontend codebase** and work out why it isn't successfully hitting the backend API.
 
 You'll need to fix the issue and build a new docker image
 

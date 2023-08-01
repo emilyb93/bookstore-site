@@ -56,7 +56,7 @@ The frontend can also be started using Docker - it will communicate to the backe
 docker run --platform linux/amd64 --rm -it -d -p 8080:80 bookstore-frontend:1.0
 ```
 
-**!!!BUT WAIT!!!** The frontend doesn't seem to be showing a list of books, when the team demo'd it earlier they showed you that it should look like this image below:
+**!!!BUT WAIT!!!** The frontend doesn't seem to be showing a list of books, when the team demo'd it earlier they had shown you that it should look like this image below:
 
 ![Screenshot of the books app showing books and their covers](./docs/images/app-screenshot.png "Screenshot of the books app showing books and their covers")
 

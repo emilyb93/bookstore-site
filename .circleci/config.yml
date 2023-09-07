@@ -8,14 +8,14 @@ jobs:
       - setup_remote_docker
       - checkout
       - docker/check
+      - auth:
+          username: $DOCKERHUB_USERNAME
+          password: $DOCKERHUB_PASS
       - docker/build:
           image: emilyb93/bookstore-website
       - docker/push:
           digest-path: /tmp/digest.txt
           image: emilyb93/bookstore-website
-          auth:
-            username: $DOCKERHUB_USERNAME
-            password: $DOCKERHUB_PASS
       - run:
           command: |
             echo "Digest is: $(</tmp/digest.txt)"

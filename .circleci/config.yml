@@ -6,3 +6,5 @@ workflows:
     jobs:
       - docker/publish:
           image: $DOCKERHUB_USERNAME/bookstore-website
+          username: $DOCKERHUB_USERNAME
+          password: $DOCKERHUB_PASS

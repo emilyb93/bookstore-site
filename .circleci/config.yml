@@ -8,7 +8,7 @@ jobs:
       - setup_remote_docker
       - checkout
       - docker/check
-      - auth:
+      - docker/auth:
           username: $DOCKERHUB_USERNAME
           password: $DOCKERHUB_PASS
       - docker/build:

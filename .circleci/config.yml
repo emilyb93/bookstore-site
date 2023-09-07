@@ -1,0 +1,22 @@
+version: 2.1
+orbs:
+  docker: circleci/docker@2.2.0
+jobs:
+  build-and-push:
+    executor: docker/docker
+    steps:
+      - setup_remote_docker
+      - checkout
+      - docker/check
+      - docker/build:
+          image: emilyb93/bookstore-website
+      - docker/push:
+          digest-path: /tmp/digest.txt
+          image: emilyb93/bookstore-website
+      - run:
+          command: |
+            echo "Digest is: $(</tmp/digest.txt)"
+workflows:
+  commit:
+    jobs:
+      - build-and-push
